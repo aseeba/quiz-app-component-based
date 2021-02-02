@@ -6,9 +6,9 @@
     "stylelint": "npx stylelint \"**/*.css\"",
     "test": "htmlhint && prettier --check . && npm run stylelint && eslint src",
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "snowpack build && build-storybook",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o ./path/to/build"
   },
   "husky": {
     "hooks": {
@@ -32,10 +32,10 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@snowpack/plugin-webpack": "^2.3.0",
-    "@storybook/addon-actions": "^6.1.15",
-    "@storybook/addon-essentials": "^6.1.15",
-    "@storybook/addon-links": "^6.1.15",
-    "@storybook/html": "^6.1.15",
+    "@storybook/addon-actions": "^6.1.16",
+    "@storybook/addon-essentials": "^6.1.16",
+    "@storybook/addon-links": "^6.1.16",
+    "@storybook/html": "^6.1.16",
     "babel-loader": "^8.2.2",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
