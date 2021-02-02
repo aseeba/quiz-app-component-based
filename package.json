@@ -4,27 +4,53 @@
   "scripts": {
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "test": "htmlhint && prettier --check . && npm run stylelint",
-    "start": "live-server"
+    "test": "htmlhint && prettier --check . && npm run stylelint && eslint src",
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
   },
   "keywords": [],
-  "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de)",
+  "author": "Lene Frei",
   "license": "ISC",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badabam/quiz-app.git"
+    "url": "git+https://github.com/macfrei/quiz-app.git"
   },
   "bugs": {
-    "url": "https://github.com/badabam/quiz-app/issues"
+    "url": "https://github.com/macfrei/quiz-app/issues"
   },
-  "homepage": "https://github.com/badabam/quiz-app#readme",
+  "homepage": "https://github.com/macfrei/quiz-app#readme",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@snowpack/plugin-webpack": "^2.3.0",
+    "@storybook/addon-actions": "^6.1.15",
+    "@storybook/addon-essentials": "^6.1.15",
+    "@storybook/addon-links": "^6.1.15",
+    "@storybook/html": "^6.1.15",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "htmlhint": "^0.14.2",
-    "live-server": "^1.2.1",
+    "husky": "^4.3.8",
     "prettier": "2.2.1",
-    "stylelint": "^13.8.0",
+    "snowpack": "^3.0.11",
+    "stylelint": "^13.9.0",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.2"
   }
 }
