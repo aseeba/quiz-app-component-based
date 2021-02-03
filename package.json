@@ -6,9 +6,9 @@
     "stylelint": "npx stylelint \"**/*.css\"",
     "test": "htmlhint && prettier --check . && npm run stylelint && eslint src",
     "start": "snowpack dev",
-    "build": "snowpack build && build-storybook",
+    "build": "snowpack build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./path/to/build"
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
