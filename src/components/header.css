@@ -7,14 +7,16 @@
 }
 
 .header__title {
-  padding: 8px;
   background-color: hotpink;
   color: white;
+  padding-top: 8px;
   margin: 0;
 }
 
 .header__subtitle {
+  display: block;
+  font-size: 75%;
+  background-color: white;
   color: hotpink;
   padding: 8px;
-  margin: 0;
 }

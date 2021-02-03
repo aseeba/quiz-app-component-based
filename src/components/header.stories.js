@@ -1,4 +1,3 @@
-import './header.css'
 import html from './header.html'
 
 export default {
