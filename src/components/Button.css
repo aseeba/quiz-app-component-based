@@ -1,8 +1,9 @@
 .Button {
+  padding: 10px 20px;
   background: hotpink;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  box-shadow: 0 4px 8px #000600;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0006;
+  font-weight: 700;
 }
