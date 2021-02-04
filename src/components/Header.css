@@ -1,13 +1,13 @@
 .Header {
   text-align: center;
-  border: 1px solid teal;
+  border: 1px solid var(--color-primary);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
 }
 
 .Header__title {
-  background-color: teal;
+  background-color: var(--color-primary);
   color: white;
   padding-top: 8px;
   margin: 0;
@@ -17,6 +17,6 @@
   display: block;
   font-size: 75%;
   background-color: white;
-  color: teal;
+  color: var(--color-primary);
   padding: 8px;
 }

@@ -6,4 +6,4 @@ export default {
 }
 
 export const base = () => Button('Hello')
-export const longText = () => Button('This is a big button')
+export const longText = () => Button('Hello world, this is a long text')

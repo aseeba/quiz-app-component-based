@@ -1,6 +1,6 @@
 .Button {
   padding: 10px 20px;
-  background: teal;
+  background: var(--color-primary);
   color: white;
   border: none;
   border-radius: 8px;
