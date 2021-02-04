@@ -1,13 +1,13 @@
 .Header {
   text-align: center;
-  border: 1px solid hotpink;
+  border: 1px solid teal;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
 }
 
 .Header__title {
-  background-color: hotpink;
+  background-color: teal;
   color: white;
   padding-top: 8px;
   margin: 0;
@@ -17,6 +17,6 @@
   display: block;
   font-size: 75%;
   background-color: white;
-  color: hotpink;
+  color: teal;
   padding: 8px;
 }
