@@ -1,6 +1,6 @@
-import createElement from '../lib/createElement'
-import Button from './Button'
-import './Card.css'
+import createElement from '../../lib/createElement'
+import Button from '../Button'
+import '../Card'
 
 export default function Card(question, answer) {
   const el = createElement('section', { className: 'Card' })

@@ -1,5 +1,5 @@
-import createElement from '../lib/createElement'
-import './Header.css'
+import createElement from '../../lib/createElement'
+import '../Header.css'
 
 export default function Header(title, subtitle) {
   const el = createElement('header', { className: 'Header' })
