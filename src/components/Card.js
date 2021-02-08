@@ -10,6 +10,7 @@ export default function Card(question, answer) {
 
   button.addEventListener('click', () => {
     answerEl.hidden = !answerEl.hidden
+    //jedes Ausrufezeichen führt zu einer Umkehrung, bspw. aus true wird false oder mit !! wird es ein echter boolean
   })
 
   el.append(questionEl, button, answerEl)
