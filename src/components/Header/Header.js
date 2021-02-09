@@ -1,30 +1,24 @@
 import createElement from '../../lib/createElement'
-import '../Header.css'
+import './Header.css'
 
 export default function Header(title, subtitle) {
-  const el = createElement('header', { className: 'Header' })
-  const headingEl = createElement('h1', {
-    className: 'Header__title',
-    innerText: `${title}`,
+  const el = createElement('header', {
+    className: 'Header',
   })
-  const subtitleEl = createElement('span', {
-    className: 'Header__subtitle',
-    innerText: `${subtitle}`,
-  })
-  el.append(headingEl, subtitleEl)
-  return el
+
+  setText(title, subtitle)
+
+  function setText(title, subtitle) {
+    el.innerHTML = `
+      <h1 class="Header__title">
+        ${title}
+        <span class="Header__subtitle">${subtitle}</span>
+      </h1>
+    `
+  }
+
+  return {
+    el,
+    setText,
+  }
 }
-
-// export default function Card(question, answer) {
-//     const el = createElement('section', { className: 'Card' })
-//     const questionEl = createElement('h2', { innerText: question })
-//     const button = Button('Show answer')
-//     const answerEl = createElement('p', { hidden: true, innerText: answer })
-
-//     button.addEventListener('click', () => {
-//       answerEl.hidden = !answerEl.hidden
-//     })
-
-//     el.append(questionEl, button, answerEl)
-//     return el
-// //   }
